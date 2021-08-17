@@ -13,6 +13,7 @@
     
     <button onclick="changeText()">Change H1 text</button>
     <button onclick="changeBackground()">Change Background</button>
+    <button onclick="changeFooter()">Change Footer Address</button>
     <table >
        
         <tr>
@@ -54,24 +55,36 @@
         </tr>
     </table>    
     <footer>
-        <p>Shop: Black Eagle<br>
-            Address: 100 Pine Street California <br>
-        <a href="mailto:ajlexy70@gmail.com">ajlexy70@gmailcom</a></p>
+        <p>Shop: Black Eagle</p>
+        <p>Address: 100 Pine Street California<p> 
+        <p><a href="mailto:ajlexy70@gmail.com">ajlexy70@gmailcom</a></p>
       </footer>
       <textarea></textarea>
  
   
     <script type = "text/javascript">
+      
+      let h1
 
       function changeText(){
-         const h1 = document.querySelector("h1")
+         let h1 = document.querySelector("h1")
          h1.innerHTML = "My nickname is doctor strange"
+          if (h1 !== undefined){
+              
+          }
       }
          
       function changeBackground(){
-          const bgColor = document.getElementsByTagName("body")
+          const bgColor = document.querySelector("body")
           body.style.backgroundColor = "red"
       }
+      
+      function changeFooter(){
+          const newFooter = document.querySelector("footer"[0])
+          newFooter.innerHTML = "Address: Yorkshire 67"
+      }
+
+
 
     </script>
  </body>
