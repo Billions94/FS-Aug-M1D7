@@ -7,9 +7,11 @@
     <title>Black Eagle</title>
 </head>
 <body>
-    <header>
+    <div id="header">
         <h1>Black Eagle</h1>
-    </header>
+    </div>
+    
+    <button onclick="changeText()">Change H1 text</button>
     <table >
        
         <tr>
@@ -55,10 +57,16 @@
             Address: 100 Pine Street California <br>
         <a href="mailto:ajlexy70@gmail.com">hege@example.com</a></p>
       </footer>
+      <textarea></textarea>
  
   
-     <script>
-
+     <script type = "text/javascript">
+      function changeText(){
+         const h1 = document.querySelector("h1")
+         h1.innerHTML = "My nickname is doctor strange"
+      }
+         
+      
 
     </script>
  </body>
