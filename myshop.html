@@ -11,7 +11,7 @@
         <h1>Black Eagle</h1>
     </div>
     
-    <button onclick="changeText()">Change H1 text</button>
+    <button  onclick="changeText()">Change H1 text</button>
     <button onclick="changeBackground()">Change Background</button>
     <button onclick="changeFooter()">Change Footer Address</button>
     <button onclick="addCss()">Add Css</button>
@@ -19,7 +19,7 @@
        
         <tr>
             <th>Image</th>
-            <th>Title</th>
+            <th id="exp" onclick="changeH1Title()">Title</th>
             <th>Info</th>
             <th style="text-align: center;">Price</th>
         </tr>
@@ -70,31 +70,37 @@
   
     <script type = "text/javascript">
       
-      const h1 = document.querySelector("h1")
+      
 
       function changeText(){
+        const h1 = document.querySelector("h1") 
          h1.innerHTML = "My nickname is doctor strange"
       }
          
-      const bgColor = document.querySelector("#body")
-
+      
       function changeBackground(){
+        const bgColor = document.querySelector("#body")
           body.style.backgroundColor = "red"
       }
-
-    
-      const newFooter = document.querySelector("#foot")
+      
 
       function changeFooter(){
+        const newFooter = document.querySelector("#foot")
           newFooter.innerHTML = "Address: Yorkshire 67"
       }
       
-      const link = document.querySelectorAll("link")
 
       function addCss(){
-          link.style.backgroundColor = "black"
+        const link = document.querySelectorAll("link")
+          link.className = "amazon"
       }
+     // Adding event to change h1
 
+
+    function changeH1Title(){
+        let changeTitle = document.getElementById("exp")
+            changeTitle.innerText = "Logistics"
+    }
 
     </script>
  </body>
