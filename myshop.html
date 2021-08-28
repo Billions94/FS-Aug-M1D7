@@ -15,6 +15,14 @@
     <button onclick="changeBackground()">Change Background</button>
     <button onclick="changeFooter()">Change Footer Address</button>
     <button onclick="addCss()">Add Css</button>
+    <button onclick="addCssToImg()">Add css to img</button> 
+    <button onclick="priceChange()">Price Update</button>
+
+
+
+
+
+
     <table >
        
         <tr>
@@ -28,36 +36,36 @@
             <td><a><img src="Hoodie.jpeg" width = "100"></a>  </td>
             <td>Hoodie</td>
             <td>A black hoddie</td>
-            <td><a  href="http://www.amazon.de/Gildan-Unisex-Kapuzenpullover-Heavy-Blend/dp/B008DV782Q/ref=asc_df_B008DV782Q/?tag=googshopde-21&linkCode=df0&hvadid=344903985576&hvpos=&hvnetw=g&hvrand=6556747086959093848&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060673&hvtargid=pla-399865482957&psc=1&th=1&psc=1&tag=&ref=&adgrpid=69384034277&hvpone=&hvptwo=&hvadid=344903985576&hvpos=&hvnetw=g&hvrand=6556747086959093848&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060673&hvtargid=pla-399865482957">Link</a></td>
-            <td>12,99 EUR</td>
+            <td><a class="amazon" href="http://www.amazon.de/Gildan-Unisex-Kapuzenpullover-Heavy-Blend/dp/B008DV782Q/ref=asc_df_B008DV782Q/?tag=googshopde-21&linkCode=df0&hvadid=344903985576&hvpos=&hvnetw=g&hvrand=6556747086959093848&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060673&hvtargid=pla-399865482957&psc=1&th=1&psc=1&tag=&ref=&adgrpid=69384034277&hvpone=&hvptwo=&hvadid=344903985576&hvpos=&hvnetw=g&hvrand=6556747086959093848&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060673&hvtargid=pla-399865482957">Link</a></td>
+            <td class='price' >12,99 EUR</td>
         </tr>
         <tr>
             <td><img src="pant.jpeg" width = "100"></td>
             <td>Pant</td>
             <td>Slim fit (For men)</td>
-            <td><a  href="https://www.amazon.de/Blend-Herren-20703472-Beige-Herstellergr%C3%B6%C3%9Fe/dp/B071D7VC6D/ref=sr_1_20?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=brown+fit+pant&qid=1629217520&s=apparel&sr=1-20">Link</a></td>
-            <td>30 EUR</td>
+            <td><a class='amazon' href="https://www.amazon.de/Blend-Herren-20703472-Beige-Herstellergr%C3%B6%C3%9Fe/dp/B071D7VC6D/ref=sr_1_20?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=brown+fit+pant&qid=1629217520&s=apparel&sr=1-20">Link</a></td>
+            <td class='price' >30 EUR</td>
         </tr>
         <tr>
             <td> <img src="shoe.jpeg" width = "100" height="50" ></td>
             <td>Shoe</td>
             <td>Brogues</td>
-            <td><a  href="https://www.amazon.de/DESAI-Business-Brogues-Schn%C3%BCrhalbschuhe-Schwarz/dp/B07M668BVJ/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=brown+brogues&qid=1629217843&s=apparel&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRzVCVjhCR0ZPNVhIJmVuY3J5cHRlZElkPUEwMDU5OTE0MkRRVk9UOVRHWVJJRSZlbmNyeXB0ZWRBZElkPUEwODEzMTc5WFFBMlRMRFlBSU9LJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Link</a></td>
-            <td>89 EUR</td>
+            <td><a class='amazon' href="https://www.amazon.de/DESAI-Business-Brogues-Schn%C3%BCrhalbschuhe-Schwarz/dp/B07M668BVJ/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=brown+brogues&qid=1629217843&s=apparel&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRzVCVjhCR0ZPNVhIJmVuY3J5cHRlZElkPUEwMDU5OTE0MkRRVk9UOVRHWVJJRSZlbmNyeXB0ZWRBZElkPUEwODEzMTc5WFFBMlRMRFlBSU9LJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Link</a></td>
+            <td class='price' >89 EUR</td>
         </tr>
         <tr>
-            <td><img src="rolex.jpeg" width = "100"></td>
-            <td id="ok">Watch</td>
+            <td  ><img src="rolex.jpeg" width = "100"></td>
+            <td >Watch</td>
             <td>Tommy Hilfiger Zifferblatt</td>
-            <td><a  href="https://www.amazon.de/Tommy-Hilfiger-Zifferblatt-Edelstahl-1791121/dp/B00V45NHKA/ref=sr_1_11?dchild=1&keywords=rolex+uhr+herren&pd_rd_r=e05c563b-6a4c-437e-9d03-1b0c833bc839&pd_rd_w=sJvHW&pd_rd_wg=0ILF3&pf_rd_p=24cddaba-5297-4fe4-a0eb-8adcf9d1cce8&pf_rd_r=3533P5H96T43T08H1RED&qid=1629217970&sr=8-11">Link</a></td>
-            <td>199 EUR</td>
+            <td><a class='amazon' href="https://www.amazon.de/Tommy-Hilfiger-Zifferblatt-Edelstahl-1791121/dp/B00V45NHKA/ref=sr_1_11?dchild=1&keywords=rolex+uhr+herren&pd_rd_r=e05c563b-6a4c-437e-9d03-1b0c833bc839&pd_rd_w=sJvHW&pd_rd_wg=0ILF3&pf_rd_p=24cddaba-5297-4fe4-a0eb-8adcf9d1cce8&pf_rd_r=3533P5H96T43T08H1RED&qid=1629217970&sr=8-11">Link</a></td>
+            <td class='price' >199 EUR</td>
         </tr>
         <tr>
             <td><a href="http://"><img src="wallet.jpeg" width = "100"></a></td>
-            <td id="ok">Accessory</td>
+            <td>Accessory</td>
             <td>A leather Wallet</td>
-            <td><a  href="https://www.amazon.de/TOMMY-HILFIGER-Trifold-Wallet-Black/dp/B00OMHKKGQ/ref=sr_1_8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3PU27N0LQ9PUZ&dchild=1&keywords=black+wallet&qid=1629218366&sprefix=black+walle%2Caps%2C313&sr=8-8">Link</a></td>
-            <td>$54,90 EUR </td>
+            <td><a class='amazon' href="https://www.amazon.de/TOMMY-HILFIGER-Trifold-Wallet-Black/dp/B00OMHKKGQ/ref=sr_1_8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3PU27N0LQ9PUZ&dchild=1&keywords=black+wallet&qid=1629218366&sprefix=black+walle%2Caps%2C313&sr=8-8">Link</a></td>
+            <td class='price' >$54,90 EUR </td>
         </tr>
     </table>    
     <footer>
@@ -68,10 +76,7 @@
       <textarea></textarea>
 
 
-      <button  onclick="changeText()">Change H1 text</button>
-    <button onclick="changeBackground()">Change Background</button>
-    <button onclick="changeFooter()">Change Footer Address</button>
-    <button onclick="addClass()"">Add Class</button>
+     
  
   
     <script type = "text/javascript">
@@ -96,10 +101,10 @@
       }
       
 
-      function addClass(){
-          let links = document.querySelectorAll('a')
-          for (let i = 0; i < links.length; i++) {
-              links[i].className = 'amazon'
+      function addCss(){
+        const link = document.querySelectorAll('.amazon')
+          for (let i = 0; i < link.length; i++) {
+              link[i].className = 'amzl'
           }
       }
      // Adding event to change h1
@@ -110,31 +115,28 @@
             changeTitle.innerText = "Logistics"
     }
 
-//     const imageClass = document.querySelectorAll('img')
+    function addCssToImg(){
+        let img = document.querySelectorAll('img')
+        for (let i = 0; i < img.length; i++) {
+            img[i].className = 'tasty'
+        }
+    }
+ 
+function getRandomColor(){
+    let red = Math.round(Math.random() * 255);
+    let blue = Math.round(Math.random() * 255);
+    let green = Math.round(Math.random() * 255);
 
-// function toggleClass() {
-//   for (let i = 0; i < 5; i++){
-    
-//     imageClass[i].classList.toggle('mystyle')
-//     console.log(imageClass[i])
-//   }
-// }
+    return "rgb(" + red + ", " + blue + ", " + green + ")"
+}
 
-// function setRandomColor() {
-// const color = getRandomColor();
+function priceChange(){
+    let price = document.querySelectorAll('.price')
+    for (let i = 0; i < price.length; i++) {
+        price[i].style.color = getRandomColor()
+    }
+}
 
-// for (let price of document.getElementsByClassName("price")) {
-//   price.style.color = color;
-// }
-// }
-
-// function getRandomColor() {
-// const red = Math.round(Math.random() * 255);
-// const green = Math.round(Math.random() * 255);
-// const blue = Math.round(Math.random() * 255);
-
-// return "rgb(" + red + ", " + green + ", " + blue + ")";
-// }
 
 
     </script>
